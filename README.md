@@ -91,6 +91,8 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 - [JSON Server](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/json-server.md)
 
+- [prop-types](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/prop-types.md)
+
 - [React Native Gesture Handler](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-native-gesture-handler.md)
 
 - [React Native Vector Icons](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-native-vector-icons.md)
@@ -99,9 +101,11 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 
 - [React Redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-redux.md)
 
+- [react-currency-format](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-currency-format.md)
+
 - [react-native-cli](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-native-cli.md)
 
-x- [react-native-iphone-x-helper](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-native-iphone-x-helper.md)
+- [react-native-iphone-x-helper](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/react-native-iphone-x-helper.md)
 
 - [reactotron-react-native](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reactotron-react-native.md)
 
@@ -111,10 +115,8 @@ x- [react-native-iphone-x-helper](https://github.com/osvaldokalvaitir/projects-s
 
 - [Redux](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/redux.md)
 
+- [Redux Persist](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/redux-persist.md)
+
 - [Redux-Saga](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/redux-saga.md)
 
-x- [reduxsauce](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/reduxsauce.md)
-
-x- [seamless-immutable](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/seamless-immutable.md)
-
-x- [styled-components](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/styled-components.md)
+- [seamless-immutable](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/seamless-immutable.md)
