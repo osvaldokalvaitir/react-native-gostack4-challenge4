@@ -1,4 +1,8 @@
-import { TabNavigator, StackNavigator } from 'react-navigation';
+import {
+  createBottomTabNavigator,
+  createStackNavigator,
+  createAppContainer,
+} from 'react-navigation';
 import { Platform, StyleSheet } from 'react-native';
 import { colors } from '~/styles';
 
@@ -6,10 +10,10 @@ import Home from '~/pages/home';
 import Product from '~/pages/product';
 import Cart from '~/pages/cart';
 
-const navigationOptions = {
+const defaultNavigationOptions = {
   headerStyle: {
     height: Platform.OS === 'ios' ? 74 : 54,
-    paddingTop: Platform.OS === 'ios' ? 40 : 20,
+    paddingTop: Platform.OS === 'ios' ? 40 : 0,
     backgroundColor: colors.white,
     borderBottomWidth: 0,
     elevation: 0,
@@ -24,49 +28,54 @@ const navigationOptions = {
   headerBackTitle: null,
 };
 
-const createNavigator = () => TabNavigator(
+const MainStack = createStackNavigator(
   {
-    Main: StackNavigator(
-      {
-        Home: { screen: Home },
-        Product: { screen: Product },
-      },
-      {
-        initialRouteName: 'Home',
-        navigationOptions,
-      },
-    ),
-    Cart: StackNavigator(
-      {
-        Cart: { screen: Cart },
-      },
-      {
-        initialRouteName: 'Cart',
-        navigationOptions,
-      },
-    ),
+    Home,
+    Product,
   },
   {
-    tabBarPosition: 'bottom',
-    tabBarOptions: {
-      showIcon: true,
-      showLabel: false,
-      activeTintColor: colors.secondary,
-      inactiveTintColor: colors.gray,
-      style: {
-        height: Platform.OS === 'ios' ? 74 : 54,
-        paddingBottom: Platform.OS === 'ios' ? 20 : 0,
-        backgroundColor: colors.white,
-        elevation: 0,
-        shadowOpacity: 0,
-        borderTopWidth: StyleSheet.hairlineWidth,
-        borderColor: colors.lighter,
-      },
-      indicatorStyle: {
-        height: 0,
-      },
-    },
+    initialRouteName: 'Home',
+    defaultNavigationOptions,
+    headerLayoutPreset: 'center',
   },
 );
 
-export default createNavigator;
+const CartStack = createStackNavigator(
+  {
+    Cart,
+  },
+  {
+    initialRouteName: 'Cart',
+    defaultNavigationOptions,
+    headerLayoutPreset: 'center',
+  },
+);
+
+export default createAppContainer(
+  createBottomTabNavigator(
+    {
+      Main: MainStack,
+      Cart: CartStack,
+    },
+    {
+      tabBarOptions: {
+        showIcon: true,
+        showLabel: false,
+        activeTintColor: colors.secondary,
+        inactiveTintColor: colors.gray,
+        style: {
+          height: Platform.OS === 'ios' ? 74 : 54,
+          paddingBottom: Platform.OS === 'ios' ? 20 : 0,
+          backgroundColor: colors.white,
+          elevation: 0,
+          shadowOpacity: 0,
+          borderTopWidth: StyleSheet.hairlineWidth,
+          borderColor: colors.lighter,
+        },
+        indicatorStyle: {
+          height: 0,
+        },
+      },
+    },
+  ),
+);
