@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   createBottomTabNavigator,
   createStackNavigator,
@@ -5,6 +6,8 @@ import {
 } from 'react-navigation';
 import { Platform, StyleSheet } from 'react-native';
 import { colors } from '~/styles';
+
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Home from '~/pages/home';
 import Product from '~/pages/product';
@@ -58,6 +61,19 @@ export default createAppContainer(
       Cart: CartStack,
     },
     {
+      defaultNavigationOptions: ({ navigation }) => ({
+        tabBarIcon: ({ focused, horizontal, tintColor }) => {
+          const { routeName } = navigation.state;
+          let iconName;
+          if (routeName === 'Main') {
+            iconName = 'home';
+          } else if (routeName === 'Cart') {
+            iconName = 'shopping-cart';
+          }
+
+          return <Icon name={iconName} size={20} color={tintColor} />;
+        },
+      }),
       tabBarOptions: {
         showIcon: true,
         showLabel: false,

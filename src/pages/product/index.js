@@ -12,14 +12,11 @@ import {
   View, Text, Image, TouchableOpacity, ActivityIndicator,
 } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
-
 import styles from './styles';
 
 class Product extends Component {
   static navigationOptions = {
     title: 'Detalhe do produto',
-    tabBarIcon: ({ tintColor }) => <Icon name="home" size={20} color={tintColor} />,
   };
 
   static propTypes = {
@@ -79,7 +76,9 @@ class Product extends Component {
               />
             </View>
             <TouchableOpacity
-              onPress={() => { this.addToCart(product.data); }}
+              onPress={() => {
+                this.addToCart(product.data);
+              }}
               style={styles.button}
             >
               <Text style={styles.buttonText}>Adicionar ao carrinho</Text>
@@ -95,10 +94,7 @@ const mapStateToProps = state => ({
   product: state.product,
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators(
-  { ...ProductActions, ...CartActions },
-  dispatch,
-);
+const mapDispatchToProps = dispatch => bindActionCreators({ ...ProductActions, ...CartActions }, dispatch);
 
 export default connect(
   mapStateToProps,

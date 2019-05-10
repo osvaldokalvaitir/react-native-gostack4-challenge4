@@ -5,8 +5,6 @@ import {
   View, FlatList, TouchableOpacity, Text, ActivityIndicator,
 } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Creators as CategoriesActions } from '~/store/ducks/categories';
@@ -19,7 +17,6 @@ import styles from './styles';
 class Home extends Component {
   static navigationOptions = {
     title: 'GoCommerce',
-    tabBarIcon: ({ tintColor }) => <Icon name="home" size={20} color={tintColor} />,
   };
 
   categoriesLoaded = false;

@@ -5,8 +5,6 @@ import CurrencyFormat from 'react-currency-format';
 
 import { View, FlatList, Text } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Creators as CartActions } from '~/store/ducks/cart';
@@ -59,15 +57,8 @@ const Cart = ({
   </View>
 );
 
-const TabBarIcon = ({ tintColor }) => <Icon name="shopping-cart" size={20} color={tintColor} />;
-
-TabBarIcon.propTypes = {
-  tintColor: PropTypes.string.isRequired,
-};
-
 Cart.navigationOptions = {
   title: 'Carrinho',
-  tabBarIcon: TabBarIcon,
 };
 
 Cart.propTypes = {
