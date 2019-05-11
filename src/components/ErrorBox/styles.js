@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   container: {
     width: metrics.screenWidth - metrics.basePadding,
     position: 'absolute',
-    top: Platform.OS === 'android' ? metrics.baseMargin : metrics.baseMargin + 20,
+    top: Platform.OS === 'android' ? metrics.baseMargin / 2 : metrics.baseMargin + 20,
     left: metrics.baseMargin,
     paddingVertical: metrics.baseMargin,
     paddingHorizontal: metrics.basePadding,

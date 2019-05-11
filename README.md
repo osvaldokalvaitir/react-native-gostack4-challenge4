@@ -10,7 +10,7 @@
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 
-Descrição.
+Aplicação usando Redux, Redux-Saga, Redux Persist, Ducks, seamless-immutable, styled-components, react-currency-format, JSON Server e Reactotron.
 
 ## Desafio 4
 
@@ -39,6 +39,14 @@ A interface da aplicação será como a seguinte:
 
 ## Índice
 
+- [Capturas de Tela](#capturas-de-tela)
+
+  - [Home](#home)
+
+  - [Detalhe](#detalhe)
+
+  - [Carrinho](#carrinho)
+
 - [Desenvolvimento](#desenvolvimento)
 
   - [Configurações Iniciais](#configurações-iniciais)
@@ -52,6 +60,27 @@ A interface da aplicação será como a seguinte:
 - [Utilizados no Projeto](#utilizados-no-projeto)
 
   - [Bibliotecas](#bibliotecas)
+
+  - [APIs](#apis)
+
+  - [Ferramentas](#ferramentas)
+
+## Capturas de Tela
+
+### Home
+
+![Home](/assets/home.png)
+Esta é a primeira tela, onde encontram-se todos os produtos vindos da API, podendo também escolher uma categoria de produtos.
+
+### Detalhe
+
+![Product](/assets/product.png)
+Nesta tela, aparece os detalhes do produto escolhido, podendo adicionar o produto no carrinho ou voltar para a tela anterior.
+
+### Carrinho
+
+![Cart](/assets/cart.png)
+Nesta tela, aparece todos os produtos que estão no carrinho e o subtotal, podendo alterar a quantidade do produto ou excluí-lo do carrinho, também é possível também voltar para a tela Home.
 
 ## Desenvolvimento
 
@@ -120,3 +149,25 @@ Clique [aqui](https://github.com/osvaldokalvaitir/projects-settings/blob/master/
 - [Redux-Saga](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/redux-saga.md)
 
 - [seamless-immutable](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/seamless-immutable.md)
+
+### APIs
+
+- **API do Json Server**
+
+  - **Rotas**
+
+    - Categorias
+
+      - Busca todas as categorias
+
+    - Produtos por Categoria
+
+      - Busca dados de todos os produtos da categoria selecionada
+
+    - Produtos
+
+      - Busca todos os dados do produto selecionado
+
+### Ferramentas
+
+- [Reactotron](https://github.com/osvaldokalvaitir/projects-settings/blob/master/inspector/reactotron.md)
