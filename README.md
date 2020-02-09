@@ -20,7 +20,7 @@ Além disso, os dados de produtos e categorias virão de uma API com json-server
 
 A interface da aplicação será como a seguinte:
 
-![Telas](/assets/screens.png)
+![Telas](/.github/assets/screens.png)
 
 ### Regras
 
@@ -52,7 +52,7 @@ A interface da aplicação será como a seguinte:
   - [Configuração do Ambiente](#configuração-do-ambiente)
 
   - [Instalação do Projeto](#instalação-do-projeto)
-  
+
   - [Execução do Projeto](#execução-do-projeto)
 
   - [Execução da API](#execução-da-api)
@@ -69,17 +69,17 @@ A interface da aplicação será como a seguinte:
 
 ### Home
 
-![Home](/assets/home.png)
+![Home](/.github/assets/home.png)
 Esta é a primeira tela, onde encontram-se todos os produtos vindos da API, podendo também escolher uma categoria de produtos.
 
 ### Detalhe
 
-![Product](/assets/product.png)
+![Product](/.github/assets/product.png)
 Nesta tela, aparece os detalhes do produto escolhido, podendo adicionar o produto no carrinho ou voltar para a tela anterior.
 
 ### Carrinho
 
-![Cart](/assets/cart.png)
+![Cart](/.github/assets/cart.png)
 Nesta tela, aparece todos os produtos que estão no carrinho e o subtotal, podendo alterar a quantidade do produto ou excluí-lo do carrinho, também é possível também voltar para a tela Home.
 
 ## Desenvolvimento
